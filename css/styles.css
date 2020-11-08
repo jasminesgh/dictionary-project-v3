@@ -1,0 +1,389 @@
+/*general styling*/
+h4 {
+  font-size: 32px;
+  font-family: 'Harmattan', Tahoma, sans-serif;
+}
+
+p,
+a,
+.search-box input[type=text] {
+  font-size: 22px;
+  font-family: 'Harmattan', Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Harmattan', Tahoma, sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Harmattan', Tahoma, sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Harmattan', Tahoma, sans-serif;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.body {
+  position: absolute;
+  top: 305px;
+  left: 0;
+  right: 0;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 782px) {
+  .body {
+    top: 390px;
+  }
+}
+
+.body p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/*headings and navigation*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title-banner {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.webtitlecontainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+}
+
+.web-title {
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.stickycontainer {
+  display: block;
+  position: sticky;
+  top: -1px;
+  text-align: center;
+  height: 80px;
+  z-index: 1;
+}
+.navcontainer {
+  z-index: 1;
+  display: block;
+  position: relative;
+  top: 0;
+  text-align: center;
+  height: 80px;
+}
+.sticknavcontainer {
+  z-index: 1;
+  display: block;
+  position: relative;
+  top: -2px;
+  text-align: center;
+  height: 80px;
+}
+.indexcontainer, .stickyalpha {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  width: 60%;
+}
+
+.indexcontainer a, .alphacontainer a, .stickyalpha a, .stickyvowel a {
+  padding: 12px;
+  font-size: 26px;
+}
+
+.alphacontainer, .stickyvowel {
+  position: absolute;
+  right: 0;
+  top: 24%;
+  width: 60%;
+}
+
+/* search */
+.search-box {
+  float: none;
+  display: block;
+  text-align: center;
+  margin: 8px 30px;
+}
+
+.search-box input[type=text] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin: 8px 30px;
+  font-size: 22px;
+}
+
+.search {
+  width: 586px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myInput {
+  background-image: url('../images/search.svg');
+  background-position: 98%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 20px 20px 20px;
+}
+
+@media screen and (min-width: 700px) {
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#myUL li a, .clear {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+/*alphabet page*/
+.alphabet-page {
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+.alphabet-title {
+  text-align: center;
+}
+
+.alpha-tab {
+  font-family: 'Harmattan', Tahoma, sans-serif;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 446px;
+}
+
+.vowels-tab {
+  font-family: 'Harmattan', Tahoma, sans-serif;
+  font-size: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 334px;
+}
+
+td {
+  padding: 30px;
+  border: solid 2px;
+  text-align: center;
+}
+
+td .tooltipcontainer {
+  position: relative;
+  bottom: 142px;
+  /*152px*/
+  right: 32px;
+}
+
+td .tooltip {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
+}
+
+.vowels-tab td .tooltip {
+  text-align: center;
+}
+
+td:hover .tooltip {
+  display: block;
+}
+
+td:hover .letter {
+  visibility: hidden;
+}
+
+.letter, .vowel {
+  font-size: 70px;
+  width: 110px;
+  height: 110px;
+}
+
+.letter-link, .letter-link:active, .letter-link {
+  color: black
+}
+
+.alphabet-vowels, .alphabet-info, .vowels {
+  width: 50%;
+  margin: 20px auto 40px auto;
+  text-align: left;
+}
+
+.vowels {
+  text-align: center;
+  font-size: 24px;
+}
+
+.vowels:hover {
+  cursor: pointer;
+}
+
+.audio {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: 0;
+  top: 0;
+}
+
+.gorbeh {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*definition page*/
+.defined-term {
+  width: 70%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.definition {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* colours */
+.noun {
+  background-color: beige;
+  padding: 2px;
+}
+
+.adjective {
+  background-color: pink;
+  padding: 2px;
+}
+
+.conjunction {
+  background-color: darksalmon;
+  padding: 2px;
+}
+
+.verb {
+  background-color: darkseagreen;
+  padding: 2px;
+}
+
+.preposition {
+  background-color: gold;
+  padding: 2px;
+}
+
+.adverb {
+  background-color: indianred;
+  padding: 2px;
+}
+
+.pronoun {
+  background-color: lightblue;
+  padding: 2px;
+}
+
+.accent {
+  background-color: #FF9C6E;
+}
+
+.webtitlecontainer,
+.alphacontainer a:hover,
+.indexcontainer a:hover,
+.stickyalpha a:hover,
+.stickyvowel a:hover {
+  background-color: #2B4D99;
+}
+
+.onPage {
+  background-color: #3E5EA6;
+}
+
+.web-title,
+.indexcontainer a,
+.alphacontainer a,
+.alphacontainer a:hover,
+.indexcontainer a:hover,
+.alphacontainer a:visited,
+.indexcontainer a:visited,
+.stickyalpha a,
+.stickyvowel a,
+.stickyvowel a:hover,
+.stickyalpha a:hover,
+.stickyvowel a:visited,
+.stickyalpha a:visited {
+  color: white;
+}
+
+.navcontainer, .sticknavcontainer, .alphacontainer, .indexcontainer{
+  background-color: #516FB3;
+}
+
+ .stickycontainer {
+   background-color: #7691CC;
+ }
+
+.stickyalpha a:hover, .stickyvowel a:hover {
+  background-color: #516FB3;
+}

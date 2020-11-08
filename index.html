@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FA-EN Dictionary</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/FA-EN-Dictionary.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="title-banner">
+    <div class="webtitlecontainer">
+      <a href="#">
+        <h2 class="web-title">فرهنگ لغت فارسی / Persian Dictionary</h2>
+      </a>
+      <div class="navcontainer">
+        <div class="indexcontainer">
+          <a href="#" class="onPage">Home</a>
+        </div>
+        <div class="alphacontainer">
+          <a href="alphabet.html">Alphabet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <form class="search-box">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search the Persian Dictionary..." class="search">
+      <input type="reset" value="Clear" id="clear">
+    </form>
+    <ul id="myUL">
+      <li><a href="definitions/def-and.html">and</a></li>
+      <li><a href="definitions/def-ant.html">ant</a></li>
+      <li><a href="definitions/def-big.html">big</a></li>
+      <li><a href="definitions/def-cat.html">cat</a></li>
+      <li><a href="definitions/def-cheese.html">cheese</a></li>
+      <li><a href="definitions/def-drink.html">drink</a></li>
+      <li><a href="definitions/def-english.html">English</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
