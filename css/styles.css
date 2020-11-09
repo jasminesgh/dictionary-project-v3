@@ -140,6 +140,11 @@ body {
   font-size: 22px;
 }
 
+label {
+  font-family: 'Harmattan', Tahoma, sans-serif;
+  font-size: 22px;
+}
+
 .search {
   width: 586px;
   margin-left: auto;
