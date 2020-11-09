@@ -387,14 +387,3 @@ td:hover .letter {
 .stickyalpha a:hover, .stickyvowel a:hover {
   background-color: #516FB3;
 }
-
-/*mobile styling*/
-@media (pointer:coarse) {
-  table {
-    width: 100%;
-    font-size: 40px;
-  }
-  td .tooltip {
-    width: 25%;
-  }
-}
